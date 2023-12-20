@@ -32,9 +32,6 @@ pipelines:
                 language: node
                 versions:
                   - "14.19.1"
-          integrations:
-            - name: regcred
-            - name: jfpipdocker
         execution:
           onStart:
             - echo "onStart can be used to do some setup or initialization of your dependencies to prepare for the execution."
