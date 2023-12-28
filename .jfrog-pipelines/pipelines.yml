@@ -19,11 +19,6 @@ pipelines:
     steps:
       - name: first
         type: Bash
-        {{ if .Values.repo.integrationName }}
-        configuration:
-          inputResources:
-            - name: {{ .Values.namePrefix }}_repo
-        {{ end }}
         configuration:
           runtime:
             type: image
